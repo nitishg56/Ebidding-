@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.widthset{
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global Styles */
+.spacer20 {
+  padding: 10px;
+}
+
+/* Homepage CSS */
+.Logo {
+  text-align: center;
+}
+
+.Logo a {
+  color: black;
+  font-family: "Kurale";
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.navBar {
+  padding: 20px;
+  text-align: left;
+  padding-left: 100px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.navBar a{
+  text-decoration: none;
+  color: black;
+}
+.navBar a:hover{
+  text-decoration: none;
+  transition-duration: 0.2s;
+  color: #1363df;
+
+}
+.navBar button {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  border: 0;
+  background: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+
+.navBar button:hover {
+  transition-duration: 0.2s;
+  color: #1363df;
+  border-bottom: 3px solid #1363df;
+}
+
+.login {
+  position: absolute;
+  display: inline;
+  right: 5%;
+}
+
+.headingTitle {
+  padding-top: 50px;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.line {
+  border: 2px solid #1364dd;
+  position: relative;
+  left: 20px;
+  border-radius: 5%;
+}
+
+.parallelogram {
+  width: 25px;
+  height: 20px;
+  transform: skew(140deg);
+  background: #1364dd;
+  position: relative;
+  left: 103%;
+  bottom: 20px;
+}
+
+.cardList {
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.bidHouseImg {
+  max-width: 250px;
+  min-height: 250px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+
+
+.title {
+  text-align: center;
+  padding: 5px;
+}
+
+.text-reset{
+  text-decoration: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .login {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .headingTitle {
+    margin-left: 2%;
+    text-align: center;
+  }
+
+  .cardList {
+    margin-left: 2%;
+  }
+
+  .cards {
+    width: 45%;
+  }
+}
+
+
+
+.shadow{
+  display: inline;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: rgb(24, 21, 21, 80%);
+}
+/* Caraousel Settings CSS */
+.carousel-item img{
+  max-width: 80%;
+  margin: auto;
+  padding-top: 30px;
+
+}
+.carousel-caption{
+  background-color: rgb(24, 21, 21, 50%);
+}
+
+.profile img{
+  border: 5px solid #000000;
+  max-width: 300px;
+  border-radius: 50%;
+  margin: 30px 10px;
+  display: inline;
+}
+
+.profile-tbl{
+  margin: auto;
+  padding-left: 50px;
+}
+.profile p{
+  max-width: 500px;
+  
+}
+.categoryimg img{
+  width: 300px;
+  height: 200px;
+  
+}
+.linewise{
+  display: inline-block;
+  margin: 20px;
+  align-items: center;
+
+}
+.pdctTitle{
+  text-align: center;
+  font-family: 'Poppins';
+  padding-bottom: 30px;
+  text-decoration: underline 5px solid #5a5a5a;
+}
+.pdct img{
+  max-width: 600px;
+
+}
+#amountBid{
+  content: '';
+  margin: 15px 0;
+  border: 3px solid black;
+  padding: 3px;
+}
+.placeBid{
+  padding: 5px 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+
+}
+.pdct td{
+  padding: 20px;
+  font-size: 16px;
+}
+.pdct h3{
+  margin-top: 30px;
+}
+.pdctTbl tr th{
+  text-align: center;
+  border: 1px solid;
+
+}
+.pdctTbl img{
+  max-width: 250px;
+
+}
+.pdctTbl tr td {
+  border: 1px solid black;
+  padding: 15px;
+}

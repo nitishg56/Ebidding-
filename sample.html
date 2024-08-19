@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+</head>
+<body>
+    <h1>Student Records</h1>
+    <div class="form">
+        <form id="student-form" onsubmit="return validateForm()" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+
+            <label for="grade">Grade</label>
+            <select name="grade" id="grade">
+                <option value="select">Select Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </form>
+        <script>
+            function validateForm(){
+                var name= document.getElementById('name');
+                var age = document.getElementById('age');
+                var grade= document.getElementById('grade');
+
+                if (name.value.trim() ==''){
+                    alert("hello owrld");
+                    return false
+                }
+                if (age.value <=0){
+                    alert("enter the number")
+                    return false;
+                }
+                if()
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

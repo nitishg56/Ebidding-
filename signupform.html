@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bidwise - Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="center">
+    <h1>BidWise</h1>
+    <h2>User Sign Up</h2>
+    <form target="/bidderOp.html">
+      <div class="txt_field">
+        <input type="text" required>
+        <span></span>
+        <label>Full Name <sup>*</sup></label>
+      </div>
+      <div class="txt_field">
+        <input type="email" required>
+        <span></span>
+        <label>Email <sup>*</sup></label>
+      </div>
+      <div class="txt_field">
+        <input type="tel" required>
+        <span></span>
+        <label>Mobile No <sup>*</sup></label>
+      </div>
+      <div class="txt_field">
+        <select required>
+          <option disabled selected>Choose Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+        <span></span>
+        <label>Gender <sup>*</sup></label>
+      </div>
+      <div class="txt_field" id="DOBlabel" >
+        <input type="date" required>
+        <span></span>
+        <label>Date of Birth <sup>*</sup></label>
+      </div>
+      <div class="txt_field">
+        <input type="password" id="password" required>
+        <span></span>
+        <label>Password <sup>*</sup></label>
+        <span class="toggle-password" onclick="togglePasswordVisibility('password')">
+          <i id="eye-icon-password" class="fas fa-eye-slash"></i>
+        </span>
+      </div>
+      <div class="txt_field">
+        <input type="password" id="re_password" required>
+        <span></span>
+        <label>Re-enter Password <sup>*</sup></label>
+        <span class="toggle-password" onclick="togglePasswordVisibility('re_password')">
+          <i id="eye-icon-re_password" class="fas fa-eye-slash"></i>
+        </span>
+      </div>
+      <input type="submit" value="Sign Up">
+      <div class="signup_link">
+        Already a member? <a href="loginform.html">Login</a>
+      </div>
+    </form>
+  </div>
+  
+</body>
+<script src="index.js"></script>
+</html>
